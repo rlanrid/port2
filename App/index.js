@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 const port = 5050;
-const config = require("./config/key.js");
+const config = require("./server/config/key.js");
 
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(express.json());
